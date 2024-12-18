@@ -44,19 +44,19 @@ function RoutesPage() {
             }
           />
           <Route
-            path="/login"
+            path="login"
             element={
               isAuthenticated ? <Navigate to="/image-gallery" /> : <Login />
             }
           />
           <Route
-            path="/register"
+            path="register"
             element={
               isAuthenticated ? <Navigate to="/image-gallery" /> : <Register />
             }
           />
           <Route
-            path="/image-gallery"
+            path="image-gallery"
             element={
               <ProtectedRoute>
                 <Gallery />
