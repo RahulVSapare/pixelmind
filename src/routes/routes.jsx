@@ -5,7 +5,6 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import ProtectedRoute from "../components/ProtectedRoute";
 import FallbackUi from "../components/FallbackUi";
 import { Box, CircularProgress } from "@mui/material";
