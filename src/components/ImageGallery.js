@@ -49,7 +49,7 @@ const ImageGallery = () => {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const imageArray = Array.from({ length: 20 }, (_, index) => ({
+      const imageArray = Array.from({ length: 24 }, (_, index) => ({
         id: index + 1,
         url: `https://via.placeholder.com/200?text=Image+${index + 1}`,
         title: `Image ${index + 1}`,
@@ -284,7 +284,7 @@ const ImageGallery = () => {
               >
                 <CardMedia
                   component="img"
-                  height="300"
+                  height="150"
                   image={image.url}
                   alt={image.title || "Image"}
                   sx={{ borderRadius: 2 }}
